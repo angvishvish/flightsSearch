@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint ./src --fix",
     "start": "webpack-dev-server --historyApiFallback true --port 8080 --content-base build/",
-    "clean": "rimraf build",
+    "clean": "rimraf dist",
     "build": "npm run clean && webpack -p"
   },
   "dependencies": {
