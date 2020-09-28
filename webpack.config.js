@@ -9,12 +9,13 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, './build'),
-		publicPath: '/',
+		publicPath: './',
 	    filename: 'bundle.[name].[hash].js'
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './src/index.html'
+			template: './src/index.html',
+			favicon: './src/favicon.ico'
 		})
 	],
 	module: {
