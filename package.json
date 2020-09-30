@@ -5,7 +5,7 @@
   "author": "Angvish Kumar",
   "scripts": {
     "lint": "eslint ./src --fix",
-    "start": "webpack-dev-server --historyApiFallback true --port 8080 --content-base build/",
+    "start": "webpack-dev-server --historyApiFallback true --port 8080 --content-base dist/",
     "clean": "rimraf dist",
     "build": "npm run clean && webpack -p"
   },
